@@ -1,0 +1,19 @@
+{
+  "name": "e-query",
+  "version": "0.1.0-beta.0",
+  "description": "an easy and effortless API calls manager to reduce and optimize your API calls, on the client.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "query",
+    "api",
+    "optimize",
+    "client",
+    "frontend",
+    "fetch"
+  ],
+  "author": "Mohammad Javad Khademian",
+  "license": "MIT"
+}
