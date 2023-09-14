@@ -1,16 +1,32 @@
 {
   "name": "e-query",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
   "version": "0.1.0-beta.0",
   "description": "an easy and effortless API calls manager to reduce and optimize your API calls, on the client.",
+  "homepage": "https://github.com/mjkhonline/e-query",
   "repository": {
     "type": "git",
     "url": "https://github.com/mjkhonline/e-query.git"
   },
-  "main": "dist/index.js",
+  "bugs": {
+    "url": "https://github.com/mjkhonline/e-query/issues"
+  },
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "start": "vite",
+    "build": "vite build"
   },
   "keywords": [
     "query",
@@ -21,5 +37,9 @@
     "fetch"
   ],
   "author": "Mohammad Javad Khademian",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.5.3"
+  }
 }
