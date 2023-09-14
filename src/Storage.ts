@@ -13,7 +13,7 @@ interface IStorage {
     getAndDelete?(key: any): any
 }
 
-class SetStorage implements IStorage {
+export class SetStorage implements IStorage {
     readonly _storage: Set<any>
     constructor() {
         this._storage = new Set()
@@ -44,7 +44,7 @@ class SetStorage implements IStorage {
     }
 }
 
-class MapStorage implements IStorage {
+export class MapStorage implements IStorage {
     readonly _storage: Map<any, any>
     constructor() {
         this._storage = new Map()
