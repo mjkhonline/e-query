@@ -1,4 +1,4 @@
-import { QueryType, QueryFn, QueryOptions } from './index.d'
+import { QueryType, QueryFn, QueryOptions } from './types'
 
 type WeakQueryType = { queryFn: QueryFn, options: QueryOptions }
 export default class Collection {

@@ -1,5 +1,5 @@
 import Collection from './Collection'
-import { QueryOptions, QueryKey, QueryFn, QueryType, QueryState, RetryFn, RetryDelayFn } from './index.d'
+import { QueryOptions, QueryKey, QueryFn, QueryType, QueryState, RetryFn, RetryDelayFn } from './types'
 import { SetStorage, MapStorage } from './Storage'
 import { defaultQueryOptions } from './defaults'
 import {isBrowser, isPromise} from './utils'

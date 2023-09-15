@@ -1,4 +1,4 @@
-import { QueryOptions, RetryFn, RetryDelayFn } from "./index.d"
+import { QueryOptions, RetryFn, RetryDelayFn } from './types'
 
 export const defaultQueryRetryFn: RetryFn = (retries: number): boolean => {
     return retries < 3
