@@ -127,7 +127,7 @@ export default class Query {
 
         const now = new Date()
         const { isIdle, isFetched, fetchedAt, isFailed, isRetrying } = query
-        const isStale = now.getTime() - fetchedAt!.getTime() > query.options.staleTime!
+        const isStale = now.getTime() - (fetchedAt?.getTime() || 0) > query.options.staleTime!
 
         const conditions = [
             (isIdle || isRetrying),
@@ -157,16 +157,15 @@ export default class Query {
     private registerListeners(): void {
         if (!isBrowser()) return
 
-        window.document.addEventListener('visibilitychange', handleVisibilityChange)
-        const that = this
-        function handleVisibilityChange(): void {
+        const handleVisibilityChange = (): void => {
             if (window.document.visibilityState === 'visible') {
-                that._refetchStorage
-                    .forEach(query => that.useQuery(query.queryKey, query.queryFn, query.options))
+                this._refetchStorage
+                    .forEach(query => this.useQuery(query.queryKey, query.queryFn, query.options))
 
-                that._refetchStorage.clear()
+                this._refetchStorage.clear()
             }
         }
+        window.document.addEventListener('visibilitychange', handleVisibilityChange)
     }
 
     private static deriveKey(rawKey: QueryKey): string {

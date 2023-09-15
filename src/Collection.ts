@@ -36,7 +36,7 @@ export default class Collection {
                 return Reflect.get(target, key, receiver)
             },
 
-            set(target, key: string, value: QueryType | WeakQueryType, receiver: any): boolean {
+            set(target, key: string, value: QueryType | WeakQueryType): boolean {
                 const query = target[key]
                 if (query) {
                     query.queryFn = value.queryFn
