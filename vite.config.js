@@ -4,7 +4,13 @@ import dts from 'vite-plugin-dts'
 import eslint from 'vite-plugin-eslint'
 
 export default defineConfig({
-    plugins: [dts(), eslint()],
+    plugins: [
+        dts({
+            compilerOptions: './tsconfig.json'
+        }),
+
+        eslint()
+    ],
     build: {
         manifest: true,
         minify: 'esbuild',

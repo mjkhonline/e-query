@@ -1,6 +1,6 @@
 import { QueryType, QueryFn, QueryOptions } from './types'
 
-type WeakQueryType = { queryFn: QueryFn, options: QueryOptions }
+export type WeakQueryType = { queryFn: QueryFn, options: QueryOptions }
 export default class Collection {
     [key: string] : QueryType | any
 
