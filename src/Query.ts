@@ -109,7 +109,7 @@ export default class Query {
 
     cancelQueryRetry (queryKey: QueryKey): void {
         if (!queryKey) {
-            throw new Error('cancelQueryRetry requires a queryKey.')
+            throw new Error('cancelQueryRetry requires a query key.')
         }
 
         const key = Query.deriveKey(queryKey)
@@ -206,7 +206,7 @@ export default class Query {
             if (typeof retry === 'boolean') {
                 return retry
             }
-            if (typeof retry === 'number') {
+            if (typeof retry === 'number' && Number.isInteger(retry)) {
                 return query.retries < retry
             }
             return (retry as RetryFn)(query.retries, error)
