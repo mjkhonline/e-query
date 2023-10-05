@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /getting-started
+      link: /get-started
     - theme: alt
       text: Github
       link: https://github.com/mjkhonline/e-query
