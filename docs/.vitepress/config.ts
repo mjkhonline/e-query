@@ -5,10 +5,9 @@ export default defineConfig({
   title: "E-Query Doc",
   description: "an easy and effortless API calls manager to reduce and optimize your API calls, on the client.",
   lang: 'en-US',
-  base: '/e-query/',
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://mjkhonline.github.io/e-query/'
+    hostname: 'https://e-query.js.org/'
   },
   head:[
     ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/logo.png"}],

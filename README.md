@@ -1,5 +1,5 @@
 <h1 align="center" >
-<img src="docs/public/logo.png" width="100" height="100" />
+<img src="docs/public/logo.png" width="100" height="100" alt="e-query logo" />
 <br />
 E-Query
 </h1>
@@ -8,7 +8,7 @@ E-Query
 
 ***
 
-Visit [E-Query Docs](https://mjkhonline.github.io/e-query) for detailed instructions.
+Visit [E-Query Docs](https://e-query.js.org/) for detailed instructions.
 
 ## 💡 What is E-Query?
 
@@ -51,7 +51,7 @@ yarn add e-query
 
 ## Usage
 Import eQuery and create an instance of it. Pass in your default options to the constructor.
-You can find the list of all available options [here](https://mjkhonline.github.io/e-query/options.html).
+You can find the list of all available options [here](https://e-query.js.org/options.html).
 
 ```js
 import eQuery from 'e-query'
@@ -75,12 +75,15 @@ eq.useQuery('your-query-key',
 ```
 
 use `getQuery` to inquire about the status of your API call.
-You can find the list of all available exposed data [here](https://mjkhonline.github.io/e-query/get-query.html#exposed-data).
+You can find the list of all available exposed data [here](https://e-query.js.org/get-query.html#exposed-data).
 
 ```js
 const { isLoading, isFailed, fetchedAt } = eq.getQuery('your-query-key')
 ```
 
+## Documentation
+
+[e-query.js.org](https://e-query.js.org/)
 
 ## License
 

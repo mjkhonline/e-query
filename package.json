@@ -6,7 +6,7 @@
   ],
   "version": "0.1.0-beta.0",
   "description": "an easy and effortless API calls manager to reduce and optimize your API calls, on the client.",
-  "homepage": "https://github.com/mjkhonline/e-query",
+  "homepage": "https://e-query.js.org/",
   "repository": {
     "type": "git",
     "url": "https://github.com/mjkhonline/e-query.git"
