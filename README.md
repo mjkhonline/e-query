@@ -8,7 +8,7 @@ E-Query
 
 ***
 
-Visit E-Query Docs for detailed instructions.
+Visit [E-Query Docs](https://mjkhonline.github.io/e-query) for detailed instructions.
 
 ## 💡 What is E-Query?
 
@@ -51,7 +51,7 @@ yarn add e-query
 
 ## Usage
 Import eQuery and create an instance of it. Pass in your default options to the constructor.
-You can find the list of all available options [here](/options).
+You can find the list of all available options [here](https://mjkhonline.github.io/e-query/options.html).
 
 ```js
 import eQuery from 'e-query'
@@ -75,7 +75,7 @@ eq.useQuery('your-query-key',
 ```
 
 use `getQuery` to inquire about the status of your API call.
-You can find the list of all available exposed data [here](/get-query#exposed-data).
+You can find the list of all available exposed data [here](https://mjkhonline.github.io/e-query/get-query.html#exposed-data).
 
 ```js
 const { isLoading, isFailed, fetchedAt } = eq.getQuery('your-query-key')
