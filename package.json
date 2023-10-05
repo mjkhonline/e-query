@@ -29,15 +29,20 @@
     "build": "tsc && vite build",
     "build:watch": "tsc && vite build --watch",
     "lint": "eslint . --ext .ts",
-    "lint-and-fix": "eslint . --ext .ts --fix"
+    "lint-and-fix": "eslint . --ext .ts --fix",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [
     "query",
     "api",
+    "api management",
     "optimize",
     "client",
     "frontend",
-    "fetch"
+    "fetch",
+    "performance"
   ],
   "author": "Mohammad Javad Khademian",
   "license": "MIT",
@@ -48,6 +53,7 @@
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vite-plugin-dts": "^3.5.3",
-    "vite-plugin-eslint": "^1.8.1"
+    "vite-plugin-eslint": "^1.8.1",
+    "vitepress": "^1.0.0-rc.15"
   }
 }

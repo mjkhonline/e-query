@@ -107,7 +107,7 @@ export default class Query {
         return Object.entries(this._collection)
     }
 
-    cancelQueryRetry (queryKey: QueryKey): void {
+    public cancelQueryRetry (queryKey: QueryKey): void {
         if (!queryKey) {
             throw new Error('cancelQueryRetry requires a query key.')
         }
