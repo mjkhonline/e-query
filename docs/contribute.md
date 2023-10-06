@@ -8,7 +8,8 @@ const members = [
     avatar: 'https://www.github.com/mjkhonline.png',
     links: [
       { icon: 'github', link: 'https://www.github.com/mjkhonline' },
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/mjkhademian/' }
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/mjkhademian/' },
+      { icon: 'instagram', link: 'https://instagram.com/mohammad.jkh' }
     ]
   }
 ]
