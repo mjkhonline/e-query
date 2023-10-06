@@ -54,10 +54,10 @@ Import eQuery and create an instance of it. Pass in your default options to the 
 You can find the list of all available options [here](https://e-query.js.org/options.html).
 
 ```js
-import eQuery from 'e-query'
+import eQuery from '@mjkhonline/e-query'
 
 const eq = new eQuery({
-  // default options
+  // pass instance level options
   staleTime: 30 * 1000 // 30 seconds  
 })
 ```
@@ -67,7 +67,7 @@ Then wrap your API calls with `useQuery`. This invokes your API call's function 
 ```js
 eq.useQuery('your-query-key',
     () => fetch('https://example.com/somedata'),
-    { // options
+    { // query level options
       staleTime: 60 * 1000, // 1 minute
       deactivateOnWindowHidden: true  
     }
