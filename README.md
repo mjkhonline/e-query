@@ -42,11 +42,11 @@ It's not a state management library, it's not a data fetching library, and it's 
 Use npm or yarn to add e-query to your project.
 
 ```npm
-npm install e-query
+npm i @mjkhonline/e-query
 ```
 
 ```yarn
-yarn add e-query
+yarn add @mjkhonline/e-query
 ```
 
 ## Usage

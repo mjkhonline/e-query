@@ -1,5 +1,5 @@
 {
-  "name": "e-query",
+  "name": "@mjkhonline/e-query",
   "type": "module",
   "files": [
     "dist"

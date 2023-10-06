@@ -1,6 +1,6 @@
 # Get Started
 
-What E-Query is, and how to install it.
+What E-Query is, and how to install and use it.
 
 ## 💡 What is E-Query?
 
@@ -17,14 +17,14 @@ In summery it helps developers to prevent unnecessary API calls. For example if 
 It's not a state management library, it's not a data fetching library, and it's not a caching library. And it has no opinion about how you manage them. It's just a library for managing API calls.
 
 ## Installation
-Use npm or yarn to add e-query to your project.
+Use `npm` or `yarn` to add e-query to your project.
 
 ```
-npm install e-query
+npm i @mjkhonline/e-query
 ```
 
 ```
-yarn add e-query
+yarn add @mjkhonline/e-query
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ Import eQuery and create an instance of it. Pass in your default options to the 
 You can find the list of all available options [here](/options).
 
 ```js
-import eQuery from 'e-query'
+import eQuery from '@mjkhonline/e-query'
 
 const eq = new eQuery({
   // default options

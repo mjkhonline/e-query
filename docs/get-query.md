@@ -49,7 +49,7 @@ The table could be a different component, and it is responsible for fetching the
 
 ```js
 // a module
-import eQuery from 'e-query'
+import eQuery from '@mjkhonline/e-query'
 
 export const eq = new eQuery()
 ```

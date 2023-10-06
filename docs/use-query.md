@@ -94,7 +94,7 @@ But we could easily wrap our API call with `useQuery` and let e-query easily man
 
 ```js
 // API Module (could be a state management module)
-import eQuery from 'e-query'
+import eQuery from '@mjkhonline/e-query'
 
 const eq = new eQuery({
     retry: 1,
