@@ -1,5 +1,5 @@
 <h1 align="center" >
-<img src="docs/public/logo.png" width="100" height="100" alt="e-query logo" />
+<img src="https://raw.githubusercontent.com/mjkhonline/e-query/main/docs/public/logo.png" width="100" height="100" alt="e-query logo" />
 <br />
 E-Query
 </h1>
