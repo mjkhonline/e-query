@@ -20,6 +20,11 @@ const members = [
 Thanks for your interest in contributing to e-query!
 We are open to any kind of contribution.
 
+
+::: tip Report Issues
+If you notice any bugs please do not hesitate to [report](https://github.com/mjkhonline/e-query/issues).
+:::
+
 Chat with me on [Telegram](https://t.me/mjkhonline).
 
 
