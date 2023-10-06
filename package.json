@@ -4,7 +4,7 @@
   "files": [
     "dist"
   ],
-  "version": "0.1.0-beta.0",
+  "version": "0.1.0-beta.1",
   "description": "an easy and effortless API calls manager to reduce and optimize your API calls, on the client.",
   "homepage": "https://e-query.js.org/",
   "repository": {
